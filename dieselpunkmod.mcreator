@@ -25,22 +25,6 @@
       }
     },
     {
-      "name": "AncerineSyringe",
-      "type": "animateditem",
-      "sortid": 1,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "ancerine_syringe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dieselpunkmod/item/AncerineSyringeItem.java",
-          "src/main/java/net/mcreator/dieselpunkmod/item/renderer/AncerineSyringeItemRenderer.java",
-          "src/main/resources/assets/dieselpunkmod/models/item/ancerine_syringe.json",
-          "src/main/java/net/mcreator/dieselpunkmod/item/model/AncerineSyringeItemModel.java"
-        ]
-      }
-    },
-    {
       "name": "AncerineSyringeUse",
       "type": "procedure",
       "sortid": 5,
@@ -499,60 +483,76 @@
           "src/main/java/net/mcreator/dieselpunkmod/Huh.java"
         ]
       }
+    },
+    {
+      "name": "AncerineSyringe1",
+      "type": "animateditem",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancerine_syringe_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/models/item/ancerine_syringe_1.json",
+          "src/main/java/net/mcreator/dieselpunkmod/item/AncerineSyringe1Item.java",
+          "src/main/java/net/mcreator/dieselpunkmod/item/renderer/AncerineSyringe1ItemRenderer.java",
+          "src/main/java/net/mcreator/dieselpunkmod/item/model/AncerineSyringe1ItemModel.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "item.dieselpunkmod.ancerine_syringe": "Шприц Анцерина",
       "item.dieselpunkmod.emptysyringe": "Пустой шприц",
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "Шприц использован",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
-      "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
       "item.dieselpunkmod.crude_oil_bucket": "Crude Oil Bucket",
       "block.dieselpunkmod.boleniym_ore": "Boleniym Ore",
-      "block.dieselpunkmod.racidiy_ore": "Fronium Ore",
-      "block.dieselpunkmod.racidiy_block": "Block of Fronium",
       "block.dieselpunkmod.crude_oil": "Crude Oil",
-      "item.dieselpunkmod.racidiy_ingot": "Fronium Ingot",
       "item.dieselpunkmod.ancerine": "Анцерин",
-      "subtitles.syringe_use": "Шприц использован",
       "itemGroup.tabitems": "Palentesque часть 1",
-      "item.dieselpunkmod.dolorine": "Порошок Долорина",
-      "item.dieselpunkmod.boleniym_ingot": "Boleniym",
+      "subtitles.syringe_use": "Шприц использован",
       "item.dieselpunkmod.bronium_ingot": "Bolenium Ingot",
-      "item.dieselpunkmod.racidiy_raw_ore": "Raw Fronium",
       "item.dieselpunkmod.bolenium_raw_ore": "Bolenium Ingot",
       "block.dieselpunkmod.bronium_block": "Block of Boleniym",
       "block.dieselpunkmod.bronium_ore": "Bolenium Ore",
-      "item.dieselpunkmod.bronium_raw_ore": "Raw Bolenium"
+      "item.dieselpunkmod.bronium_raw_ore": "Raw Bolenium",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
+      "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
+      "block.dieselpunkmod.racidiy_ore": "Fronium Ore",
+      "block.dieselpunkmod.racidiy_block": "Block of Fronium",
+      "item.dieselpunkmod.racidiy_ingot": "Fronium Ingot",
+      "item.dieselpunkmod.dolorine": "Порошок Долорина",
+      "item.dieselpunkmod.boleniym_ingot": "Boleniym",
+      "item.dieselpunkmod.racidiy_raw_ore": "Raw Fronium"
     },
     "en_us": {
-      "item.dieselpunkmod.ancerine_syringe": "Ancerine Syringe",
       "item.dieselpunkmod.emptysyringe": "Empty syringe",
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "syringe used",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
-      "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
       "item.dieselpunkmod.crude_oil_bucket": "Crude Oil Bucket",
       "block.dieselpunkmod.boleniym_ore": "Bolenium Ore",
-      "block.dieselpunkmod.racidiy_ore": "Racidium Ore",
-      "block.dieselpunkmod.racidiy_block": "Block of Racidium",
       "block.dieselpunkmod.crude_oil": "Crude Oil",
-      "item.dieselpunkmod.racidiy_ingot": "Racidium Ingot",
       "item.dieselpunkmod.ancerine": "Ancerine",
-      "subtitles.syringe_use": "Syringe use",
       "itemGroup.tabitems": "Palentesque part 1",
-      "item.dieselpunkmod.dolorine": "Crude dolorine powder",
-      "item.dieselpunkmod.boleniym_ingot": "Bolenium Ingot",
+      "subtitles.syringe_use": "Syringe use",
       "item.dieselpunkmod.bronium_ingot": "Fronium Ingot",
-      "item.dieselpunkmod.racidiy_raw_ore": "Raw Racidium",
       "item.dieselpunkmod.bolenium_raw_ore": "Raw Bolenium",
       "block.dieselpunkmod.bronium_block": "Block of Fronium",
       "block.dieselpunkmod.bronium_ore": "Fronium Ore",
-      "item.dieselpunkmod.bronium_raw_ore": "Raw Fronium"
+      "item.dieselpunkmod.ancerine_syringe_1": "Ancerine Syringe",
+      "item.dieselpunkmod.bronium_raw_ore": "Raw Fronium",
+      "item.dieselpunkmod.ancerine_syringe": "Ancerine Syringe",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
+      "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
+      "block.dieselpunkmod.racidiy_ore": "Racidium Ore",
+      "block.dieselpunkmod.racidiy_block": "Block of Racidium",
+      "item.dieselpunkmod.racidiy_ingot": "Racidium Ingot",
+      "item.dieselpunkmod.dolorine": "Crude dolorine powder",
+      "item.dieselpunkmod.boleniym_ingot": "Bolenium Ingot",
+      "item.dieselpunkmod.racidiy_raw_ore": "Raw Racidium"
     }
   },
   "foldersRoot": {

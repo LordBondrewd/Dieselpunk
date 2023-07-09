@@ -3,44 +3,25 @@ package net.mcreator.dieselpunkmod.item;
 
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
 
-import net.minecraftforge.client.IItemRenderProperties;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
-import net.mcreator.dieselpunkmod.procedures.AncerineSyringeUseProcedure;
-import net.mcreator.dieselpunkmod.item.renderer.AncerineSyringeItemRenderer;
-import net.mcreator.dieselpunkmod.init.DieselpunkmodModTabs;
+import javax.annotation.Nullable;
 
-import java.util.function.Consumer;
-import java.util.List;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class AncerineSyringeItem extends Item implements IAnimatable {
+public class AncerineSyringe1Item extends Item implements IAnimatable {
 	public AnimationFactory factory = GeckoLibUtil.createFactory(this);
 	public String animationprocedure = "empty";
 	public static ItemTransforms.TransformType transformType;
 
-	public AncerineSyringeItem() {
-		super(new Item.Properties().tab(DieselpunkmodModTabs.TAB_ITEMS).stacksTo(16).rarity(Rarity.UNCOMMON));
+	public AncerineSyringe1Item() {
+		super(new Item.Properties().tab(DieselpunkmodModTabs.TAB_ITEMS).stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override
 	public void initializeClient(Consumer<IItemRenderProperties> consumer) {
 		super.initializeClient(consumer);
 		consumer.accept(new IItemRenderProperties() {
-			private final BlockEntityWithoutLevelRenderer renderer = new AncerineSyringeItemRenderer();
+			private final BlockEntityWithoutLevelRenderer renderer = new AncerineSyringe1ItemRenderer();
 
 			@Override
 			public BlockEntityWithoutLevelRenderer getItemStackRenderer() {
@@ -53,7 +34,7 @@ public class AncerineSyringeItem extends Item implements IAnimatable {
 		this.transformType = type;
 	}
 
-	protected void interpretFirstPersonInstructions(List<String> tokens, AncerineSyringeItemRenderer renderer) {
+	protected void interpretFirstPersonInstructions(List<String> tokens, AncerineSyringe1ItemRenderer renderer) {
 		String firstTok = tokens.get(0);
 		if (tokens.size() < 2)
 			return;
@@ -101,7 +82,7 @@ public class AncerineSyringeItem extends Item implements IAnimatable {
 		return PlayState.CONTINUE;
 	}
 
-	public void setupAnimationState(AncerineSyringeItemRenderer renderer, ItemStack stack, PoseStack matrixStack, float aimProgress) {
+	public void setupAnimationState(AncerineSyringe1ItemRenderer renderer, ItemStack stack, PoseStack matrixStack, float aimProgress) {
 	}
 
 	@Override
@@ -118,13 +99,6 @@ public class AncerineSyringeItem extends Item implements IAnimatable {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent(
-				"Ancerine Syringe\u0412\u0435\u0449\u0435\u0441\u0442\u0432\u043E \u0436\u0451\u043B\u0442\u043E\u0433\u043E \u043E\u0442\u0442\u0435\u043D\u043A\u0430 \u043E\u0431\u043B\u0430\u0434\u0430\u044E\u0449\u0438\u0435 \u0441\u0442\u0438\u043C\u0443\u043B\u0438\u0440\u0443\u044E\u0449\u0438\u043C\u0438 \u0441\u0432\u043E\u0439\u0441\u0442\u0432\u0430\u043C\u0438. \u0414\u043E\u0431\u044B\u0432\u0430\u0435\u0442\u0441\u044F \u0438\u0437 \u0447\u0435\u0440\u043D\u0438\u043B \u0440\u0435\u0434\u043A\u043E\u0433\u043E \u043C\u043E\u0440\u0441\u043A\u043E\u0433\u043E \u0436\u0438\u0432\u043E\u0442\u043D\u043E\u0433\u043E \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u043C\u043E\u0433\u043E (\u0430\u043D\u0434\u0440\u0435\u0439 \u0441\u043C\u0435\u043D\u0438 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435)"));
-	}
-
-	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		ItemStack itemstack = ar.getObject();
@@ -135,4 +109,5 @@ public class AncerineSyringeItem extends Item implements IAnimatable {
 		AncerineSyringeUseProcedure.execute();
 		return ar;
 	}
+
 }
