@@ -17,15 +17,12 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.dieselpunkmod.item.AncerineSyringe1Item;
 import net.mcreator.dieselpunkmod.init.DieselpunkmodModItems;
 
 public class AncerineSyringeUseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.getItem() instanceof AncerineSyringe1Item)
-			itemstack.getOrCreateTag().putString("geckoAnim", "animation.syringe.use");
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
@@ -47,8 +44,8 @@ public class AncerineSyringeUseProcedure {
 			}
 
 			private void run() {
-				if (DieselpunkmodModItems.ANCERINE_SYRINGE_1.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()
-						|| DieselpunkmodModItems.ANCERINE_SYRINGE_1.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem()) {
+				if (DieselpunkmodModItems.ANCERINE_SYRINGE.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()
+						|| DieselpunkmodModItems.ANCERINE_SYRINGE.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem()) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("dieselpunkmod:syringe")), SoundSource.NEUTRAL, 1, 1);

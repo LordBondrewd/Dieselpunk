@@ -1,6 +1,0 @@
-{
-  "parent": "dieselpunkmod:displaysettings/ancerine.item",
-  "textures": {
-    "layer0": "dieselpunkmod:items/texture"
-  }
-}

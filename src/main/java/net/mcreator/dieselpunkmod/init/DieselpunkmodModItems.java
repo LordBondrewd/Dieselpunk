@@ -22,7 +22,7 @@ import net.mcreator.dieselpunkmod.item.BroniumRawOreItem;
 import net.mcreator.dieselpunkmod.item.BroniumIngotItem;
 import net.mcreator.dieselpunkmod.item.BoleniymIngotItem;
 import net.mcreator.dieselpunkmod.item.BoleniumRawOreItem;
-import net.mcreator.dieselpunkmod.item.AncerineSyringe1Item;
+import net.mcreator.dieselpunkmod.item.AncerineSyringeItem;
 import net.mcreator.dieselpunkmod.item.AncerineItem;
 import net.mcreator.dieselpunkmod.DieselpunkmodMod;
 
@@ -45,7 +45,7 @@ public class DieselpunkmodModItems {
 	public static final RegistryObject<Item> RACIDIY_INGOT = REGISTRY.register("racidiy_ingot", () -> new RacidiyIngotItem());
 	public static final RegistryObject<Item> RACIDIY_RAW_ORE = REGISTRY.register("racidiy_raw_ore", () -> new RacidiyRawOreItem());
 	public static final RegistryObject<Item> CRUDE_OIL_BUCKET = REGISTRY.register("crude_oil_bucket", () -> new CrudeOilItem());
-	public static final RegistryObject<Item> ANCERINE_SYRINGE_1 = REGISTRY.register("ancerine_syringe_1", () -> new AncerineSyringe1Item());
+	public static final RegistryObject<Item> ANCERINE_SYRINGE = REGISTRY.register("ancerine_syringe", () -> new AncerineSyringeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
