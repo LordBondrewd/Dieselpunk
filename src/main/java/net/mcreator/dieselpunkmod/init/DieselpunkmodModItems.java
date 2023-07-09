@@ -22,11 +22,13 @@ import net.mcreator.dieselpunkmod.item.BroniumRawOreItem;
 import net.mcreator.dieselpunkmod.item.BroniumIngotItem;
 import net.mcreator.dieselpunkmod.item.BoleniymIngotItem;
 import net.mcreator.dieselpunkmod.item.BoleniumRawOreItem;
+import net.mcreator.dieselpunkmod.item.AncerineSyringeItem;
 import net.mcreator.dieselpunkmod.item.AncerineItem;
 import net.mcreator.dieselpunkmod.DieselpunkmodMod;
 
 public class DieselpunkmodModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, DieselpunkmodMod.MODID);
+	public static final RegistryObject<Item> ANCERINE_SYRINGE = REGISTRY.register("ancerine_syringe", () -> new AncerineSyringeItem());
 	public static final RegistryObject<Item> EMPTYSYRINGE = REGISTRY.register("emptysyringe", () -> new EmptysyringeItem());
 	public static final RegistryObject<Item> ANCERINE = REGISTRY.register("ancerine", () -> new AncerineItem());
 	public static final RegistryObject<Item> DOLORINE = REGISTRY.register("dolorine", () -> new DolorineItem());
