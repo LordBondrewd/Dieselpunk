@@ -10,7 +10,7 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.dieselpunkmod.item.AncerineSyringeItem;
+import net.mcreator.dieselpunkmod.item.AncerineSyringe1Item;
 
 import java.lang.reflect.Field;
 
@@ -46,7 +46,7 @@ public class ItemAnimationFactory {
 			if (!event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getMainHandItem().getItem() instanceof GeoArmorItem)) {
 				animation = event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
-				if (event.player.getMainHandItem().getItem() instanceof AncerineSyringeItem animatable)
+				if (event.player.getMainHandItem().getItem() instanceof AncerineSyringe1Item animatable)
 					if (event.player.level.isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
@@ -55,7 +55,7 @@ public class ItemAnimationFactory {
 			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof GeoArmorItem)) {
 				animation = event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
-				if (event.player.getOffhandItem().getItem() instanceof AncerineSyringeItem animatable)
+				if (event.player.getOffhandItem().getItem() instanceof AncerineSyringe1Item animatable)
 					if (event.player.level.isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();

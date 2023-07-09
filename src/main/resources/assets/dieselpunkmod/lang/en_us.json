@@ -1,7 +1,6 @@
 {
-  "item.dieselpunkmod.ancerine_syringe": "Ancerine Syringe",
-  "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
   "item.dieselpunkmod.emptysyringe": "Empty syringe",
+  "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
   "subtitles.syringe": "syringe used",
   "fluid.dieselpunkmod.crude_oil": "Crude Oil",
   "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
@@ -21,5 +20,6 @@
   "item.dieselpunkmod.bolenium_raw_ore": "Raw Bolenium",
   "block.dieselpunkmod.bronium_block": "Block of Fronium",
   "block.dieselpunkmod.bronium_ore": "Fronium Ore",
+  "item.dieselpunkmod.ancerine_syringe_1": "Ancerine Syringe",
   "item.dieselpunkmod.bronium_raw_ore": "Raw Fronium"
 }

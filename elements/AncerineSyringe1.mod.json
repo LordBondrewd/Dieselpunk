@@ -6,7 +6,7 @@
     "texture": "texture",
     "name": "Ancerine Syringe",
     "idle": "animation.syringe.idle",
-    "rarity": "UNCOMMON",
+    "rarity": "COMMON",
     "displaySettings": "ancerine.item.json",
     "leftArm": "",
     "rightArm": "",
@@ -29,9 +29,7 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "Ancerine SyringeВещество жёлтого оттенка обладающие стимулирующими свойствами. Добывается из чернил редкого морского животного называемого (андрей смени название)"
-    ],
+    "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,

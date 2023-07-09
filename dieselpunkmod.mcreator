@@ -25,22 +25,6 @@
       }
     },
     {
-      "name": "AncerineSyringe",
-      "type": "animateditem",
-      "sortid": 1,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "ancerine_syringe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dieselpunkmod/item/AncerineSyringeItem.java",
-          "src/main/java/net/mcreator/dieselpunkmod/item/renderer/AncerineSyringeItemRenderer.java",
-          "src/main/resources/assets/dieselpunkmod/models/item/ancerine_syringe.json",
-          "src/main/java/net/mcreator/dieselpunkmod/item/model/AncerineSyringeItemModel.java"
-        ]
-      }
-    },
-    {
       "name": "AncerineSyringeUse",
       "type": "procedure",
       "sortid": 5,
@@ -51,7 +35,32 @@
         "files": [
           "src/main/java/net/mcreator/dieselpunkmod/procedures/AncerineSyringeUseProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -499,15 +508,30 @@
           "src/main/java/net/mcreator/dieselpunkmod/Huh.java"
         ]
       }
+    },
+    {
+      "name": "AncerineSyringe1",
+      "type": "animateditem",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancerine_syringe_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/renderer/AncerineSyringe1ItemRenderer.java",
+          "src/main/java/net/mcreator/dieselpunkmod/item/AncerineSyringe1Item.java",
+          "src/main/java/net/mcreator/dieselpunkmod/item/model/AncerineSyringe1ItemModel.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/ancerine_syringe_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "item.dieselpunkmod.ancerine_syringe": "Шприц Анцерина",
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "item.dieselpunkmod.emptysyringe": "Пустой шприц",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "Шприц использован",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
       "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
@@ -527,12 +551,12 @@
       "item.dieselpunkmod.bolenium_raw_ore": "Bolenium Ingot",
       "block.dieselpunkmod.bronium_block": "Block of Boleniym",
       "block.dieselpunkmod.bronium_ore": "Bolenium Ore",
+      "item.dieselpunkmod.ancerine_syringe_1": "Ancerine Syringe",
       "item.dieselpunkmod.bronium_raw_ore": "Raw Bolenium"
     },
     "en_us": {
-      "item.dieselpunkmod.ancerine_syringe": "Ancerine Syringe",
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "item.dieselpunkmod.emptysyringe": "Empty syringe",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "syringe used",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
       "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
@@ -552,6 +576,7 @@
       "item.dieselpunkmod.bolenium_raw_ore": "Raw Bolenium",
       "block.dieselpunkmod.bronium_block": "Block of Fronium",
       "block.dieselpunkmod.bronium_ore": "Fronium Ore",
+      "item.dieselpunkmod.ancerine_syringe_1": "Ancerine Syringe",
       "item.dieselpunkmod.bronium_raw_ore": "Raw Fronium"
     }
   },

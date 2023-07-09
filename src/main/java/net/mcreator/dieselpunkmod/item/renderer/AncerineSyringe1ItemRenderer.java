@@ -1,5 +1,10 @@
 package net.mcreator.dieselpunkmod.item.renderer;
 
+import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
+import software.bernie.geckolib3.geo.render.built.GeoModel;
+import software.bernie.geckolib3.core.controller.AnimationController;
+import software.bernie.geckolib3.core.IAnimatableModel;
+
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionHand;
@@ -11,8 +16,8 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.dieselpunkmod.item.model.AncerineSyringeItemModel;
-import net.mcreator.dieselpunkmod.item.AncerineSyringeItem;
+import net.mcreator.dieselpunkmod.item.model.AncerineSyringe1ItemModel;
+import net.mcreator.dieselpunkmod.item.AncerineSyringe1Item;
 import net.mcreator.dieselpunkmod.interfaces.RendersPlayerArms;
 
 import java.util.Set;
@@ -25,21 +30,21 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 @SuppressWarnings("deprecated")
-public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringeItem> implements RendersPlayerArms {
-	public AncerineSyringeItemRenderer() {
-		super(new AncerineSyringeItemModel());
+public class AncerineSyringe1ItemRenderer extends GeoItemRenderer<AncerineSyringe1Item> implements RendersPlayerArms {
+	public AncerineSyringe1ItemRenderer() {
+		super(new AncerineSyringe1ItemModel());
 	}
 
 	@Override
-	public RenderType getRenderType(AncerineSyringeItem animatable, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, VertexConsumer buffer, int packedLight, ResourceLocation texture) {
+	public RenderType getRenderType(AncerineSyringe1Item animatable, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, VertexConsumer buffer, int packedLight, ResourceLocation texture) {
 		return RenderType.entityTranslucent(getTextureLocation(animatable));
 	}
 
 	static {
 		AnimationController.addModelFetcher(animatable -> {
-			if (animatable instanceof AncerineSyringeItem) {
+			if (animatable instanceof AncerineSyringe1Item) {
 				Item item = (Item) animatable;
-				BlockEntityWithoutLevelRenderer ister = new AncerineSyringeItemRenderer();
+				BlockEntityWithoutLevelRenderer ister = new AncerineSyringe1ItemRenderer();
 				if (ister instanceof GeoItemRenderer) {
 					return (IAnimatableModel<Object>) ((GeoItemRenderer<?>) ister).getGeoModelProvider();
 				}
@@ -52,7 +57,7 @@ public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringe
 	protected MultiBufferSource currentBuffer;
 	protected RenderType renderType;
 	public TransformType transformType;
-	protected AncerineSyringeItem animatable;
+	protected AncerineSyringe1Item animatable;
 	private float aimProgress = 0.0f;
 	private final Set<String> hiddenBones = new HashSet<>();
 	private final Set<String> suppressedBones = new HashSet<>();
@@ -67,7 +72,7 @@ public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringe
 	}
 
 	@Override
-	public void render(GeoModel model, AncerineSyringeItem animatable, float partialTicks, RenderType type, PoseStack matrixStackIn, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, int packedOverlayIn, float red,
+	public void render(GeoModel model, AncerineSyringe1Item animatable, float partialTicks, RenderType type, PoseStack matrixStackIn, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, int packedOverlayIn, float red,
 			float green, float blue, float alpha) {
 		this.currentBuffer = renderTypeBuffer;
 		this.renderType = type;
@@ -79,7 +84,7 @@ public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringe
 	}
 
 	@Override
-	public void render(AncerineSyringeItem animatable, PoseStack stack, MultiBufferSource bufferIn, int packedLightIn, ItemStack itemStack) {
+	public void render(AncerineSyringe1Item animatable, PoseStack stack, MultiBufferSource bufferIn, int packedLightIn, ItemStack itemStack) {
 		Minecraft mc = Minecraft.getInstance();
 		float sign = 1.0f;
 		this.aimProgress = Mth.clamp(this.aimProgress + mc.getFrameTime() * sign * 0.1f, 0.0f, 1.0f);
@@ -92,12 +97,12 @@ public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringe
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(AncerineSyringeItem instance) {
+	public ResourceLocation getTextureLocation(AncerineSyringe1Item instance) {
 		return super.getTextureLocation(instance);
 	}
 
 	@Override
-	public Integer getUniqueID(AncerineSyringeItem animatable) {
+	public Integer getUniqueID(AncerineSyringe1Item animatable) {
 		if (this.currentItemStack == null || this.transformType != TransformType.FIRST_PERSON_LEFT_HAND && this.transformType != TransformType.FIRST_PERSON_RIGHT_HAND) {
 			return -1;
 		}
