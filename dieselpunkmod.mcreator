@@ -506,8 +506,8 @@
   "language_map": {
     "ru_ru": {
       "item.dieselpunkmod.ancerine_syringe": "Шприц Анцерина",
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "item.dieselpunkmod.emptysyringe": "Пустой шприц",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "Шприц использован",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
       "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
@@ -531,8 +531,8 @@
     },
     "en_us": {
       "item.dieselpunkmod.ancerine_syringe": "Ancerine Syringe",
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "item.dieselpunkmod.emptysyringe": "Empty syringe",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "syringe used",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
       "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
