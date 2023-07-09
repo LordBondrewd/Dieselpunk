@@ -1,36 +1,12 @@
 
 package net.mcreator.dieselpunkmod.item;
 
-import software.bernie.geckolib3.util.GeckoLibUtil;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
 
-import net.minecraftforge.client.IItemRenderProperties;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
-import net.mcreator.dieselpunkmod.procedures.AncerineSyringeUseProcedure;
-import net.mcreator.dieselpunkmod.item.renderer.AncerineSyringe1ItemRenderer;
-import net.mcreator.dieselpunkmod.init.DieselpunkmodModTabs;
-
-import java.util.function.Consumer;
-import java.util.List;
-
-import com.mojang.blaze3d.vertex.PoseStack;
+import javax.annotation.Nullable;
 
 public class AncerineSyringe1Item extends Item implements IAnimatable {
 	public AnimationFactory factory = GeckoLibUtil.createFactory(this);
@@ -130,7 +106,8 @@ public class AncerineSyringe1Item extends Item implements IAnimatable {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		AncerineSyringeUseProcedure.execute(world, x, y, z, entity, itemstack);
+		AncerineSyringeUseProcedure.execute();
 		return ar;
 	}
+
 }
