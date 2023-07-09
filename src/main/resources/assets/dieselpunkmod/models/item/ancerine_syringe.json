@@ -1,7 +1,0 @@
-{
-  "parent": "dieselpunkmod:custom/syringe",
-  "textures": {
-    "0": "dieselpunkmod:blocks/syringe",
-    "particle": "dieselpunkmod:items/texture"
-  }
-}
