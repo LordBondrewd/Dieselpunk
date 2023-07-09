@@ -513,7 +513,7 @@
       "name": "AncerineSyringe1",
       "type": "animateditem",
       "sortid": 33,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ancerine_syringe_1",
       "metadata": {
@@ -530,8 +530,8 @@
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "item.dieselpunkmod.emptysyringe": "Пустой шприц",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "Шприц использован",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
       "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
@@ -555,8 +555,8 @@
       "item.dieselpunkmod.bronium_raw_ore": "Raw Bolenium"
     },
     "en_us": {
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "item.dieselpunkmod.emptysyringe": "Empty syringe",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "subtitles.syringe": "syringe used",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
       "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
