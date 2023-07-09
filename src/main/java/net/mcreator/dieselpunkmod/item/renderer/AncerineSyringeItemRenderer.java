@@ -1,33 +1,6 @@
 package net.mcreator.dieselpunkmod.item.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
-import software.bernie.geckolib3.geo.render.built.GeoModel;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.IAnimatableModel;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.util.Mth;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.block.model.ItemTransforms.TransformType;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.dieselpunkmod.item.model.AncerineSyringeItemModel;
-import net.mcreator.dieselpunkmod.item.AncerineSyringeItem;
-import net.mcreator.dieselpunkmod.interfaces.RendersPlayerArms;
-
-import java.util.Set;
-import java.util.Map;
-import java.util.HashSet;
-import java.util.HashMap;
-
-import com.mojang.math.Vector3f;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
 
 @SuppressWarnings("deprecated")
 public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringeItem> implements RendersPlayerArms {
@@ -52,6 +25,7 @@ public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringe
 			return null;
 		});
 	}
+
 	private static final float SCALE_RECIPROCAL = 1.0f / 16.0f;
 	protected boolean renderArms = false;
 	protected MultiBufferSource currentBuffer;
@@ -154,4 +128,5 @@ public class AncerineSyringeItemRenderer extends GeoItemRenderer<AncerineSyringe
 	public boolean shouldAllowHandRender(ItemStack mainhand, ItemStack offhand, InteractionHand renderingHand) {
 		return renderingHand == InteractionHand.MAIN_HAND;
 	}
+
 }
