@@ -528,9 +528,8 @@
   "sound_elements": [],
   "language_map": {
     "ru_ru": {
-      "item.dieselpunkmod.ancerine_syringe": "Ancerine Syringe",
-      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "item.dieselpunkmod.emptysyringe": "Пустой шприц",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
       "subtitles.syringe": "Шприц использован",
       "item.dieselpunkmod.crude_oil_bucket": "Crude Oil Bucket",
@@ -554,14 +553,14 @@
     },
     "en_us": {
       "item.dieselpunkmod.emptysyringe": "Empty syringe",
-      "subtitles.syringe": "syringe used",
       "fluid.dieselpunkmod.crude_oil": "Crude Oil",
+      "subtitles.syringe": "syringe used",
       "item.dieselpunkmod.crude_oil_bucket": "Crude Oil Bucket",
       "block.dieselpunkmod.boleniym_ore": "Bolenium Ore",
       "block.dieselpunkmod.crude_oil": "Crude Oil",
       "item.dieselpunkmod.ancerine": "Ancerine",
-      "itemGroup.tabitems": "Palentesque part 1",
       "subtitles.syringe_use": "Syringe use",
+      "itemGroup.tabitems": "Palentesque part 1",
       "item.dieselpunkmod.bronium_ingot": "Fronium Ingot",
       "item.dieselpunkmod.bolenium_raw_ore": "Raw Bolenium",
       "block.dieselpunkmod.bronium_block": "Block of Fronium",
