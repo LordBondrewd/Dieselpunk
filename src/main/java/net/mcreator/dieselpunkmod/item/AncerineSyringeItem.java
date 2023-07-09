@@ -1,15 +1,7 @@
 
 package net.mcreator.dieselpunkmod.item;
 
-import software.bernie.geckolib3.util.GeckoLibUtil;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
 
 import net.minecraftforge.client.IItemRenderProperties;
 
@@ -140,7 +132,7 @@ public class AncerineSyringeItem extends Item implements IAnimatable {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		AncerineSyringeUseProcedure.execute(world, x, y, z, entity, itemstack);
+		AncerineSyringeUseProcedure.execute();
 		return ar;
 	}
 }
