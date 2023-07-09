@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dieselpunkmod:bronium_block"
+    }
+  ],
+  "result": {
+    "item": "dieselpunkmod:bronium_ingot",
+    "count": 9
+  }
+}

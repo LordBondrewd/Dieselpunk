@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dieselpunkmod:racidiy_block"
+    }
+  ],
+  "result": {
+    "item": "dieselpunkmod:racidiy_ingot",
+    "count": 9
+  }
+}

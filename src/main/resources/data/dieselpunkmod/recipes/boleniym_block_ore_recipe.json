@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dieselpunkmod:boleniym_block"
+    }
+  ],
+  "result": {
+    "item": "dieselpunkmod:boleniym_ingot",
+    "count": 9
+  }
+}

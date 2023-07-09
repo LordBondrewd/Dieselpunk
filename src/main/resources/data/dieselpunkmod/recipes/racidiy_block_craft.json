@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "1": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "2": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "3": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "4": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "5": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "6": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "7": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    },
+    "8": {
+      "item": "dieselpunkmod:racidiy_ingot"
+    }
+  },
+  "result": {
+    "item": "dieselpunkmod:racidiy_block",
+    "count": 1
+  }
+}

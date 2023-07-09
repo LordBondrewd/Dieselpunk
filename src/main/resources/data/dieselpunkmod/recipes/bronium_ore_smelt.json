@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "dieselpunkmod:bronium_raw_ore"
+  },
+  "result": "dieselpunkmod:bronium_ingot"
+}

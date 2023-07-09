@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dieselpunkmod:blocks/bolenium_ore",
+    "particle": "dieselpunkmod:blocks/bolenium_ore"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dieselpunkmod:boleniym_block",
+    "dieselpunkmod:boleniym_ore",
+    "dieselpunkmod:bronium_ore",
+    "dieselpunkmod:bronium_block",
+    "dieselpunkmod:racidiy_ore",
+    "dieselpunkmod:racidiy_block"
+  ]
+}

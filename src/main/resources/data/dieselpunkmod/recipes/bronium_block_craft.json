@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "1": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "2": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "3": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "4": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "5": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "6": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "7": {
+      "item": "dieselpunkmod:bronium_ingot"
+    },
+    "8": {
+      "item": "dieselpunkmod:bronium_ingot"
+    }
+  },
+  "result": {
+    "item": "dieselpunkmod:bronium_block",
+    "count": 1
+  }
+}

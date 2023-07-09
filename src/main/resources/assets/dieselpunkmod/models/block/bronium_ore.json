@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "dieselpunkmod:blocks/fronium_ore",
+    "particle": "dieselpunkmod:blocks/fronium_ore"
+  }
+}

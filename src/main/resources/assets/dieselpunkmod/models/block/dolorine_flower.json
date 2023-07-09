@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "dieselpunkmod:blocks/dolorineflower",
+    "particle": "dieselpunkmod:blocks/dolorineflower"
+  }
+}

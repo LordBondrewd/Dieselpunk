@@ -1,0 +1,596 @@
+{
+  "mod_elements": [
+    {
+      "name": "Items",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "items",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Emptysyringe",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emptysyringe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/EmptysyringeItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/emptysyringe.json"
+        ]
+      }
+    },
+    {
+      "name": "AncerineSyringe",
+      "type": "animateditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancerine_syringe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/renderer/AncerineSyringeItemRenderer.java",
+          "src/main/java/net/mcreator/dieselpunkmod/item/model/AncerineSyringeItemModel.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/ancerine_syringe.json",
+          "src/main/java/net/mcreator/dieselpunkmod/item/AncerineSyringeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncerineSyringeUse",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancerine_syringe_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/procedures/AncerineSyringeUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ancerine",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancerine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/AncerineItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/ancerine.json"
+        ]
+      }
+    },
+    {
+      "name": "AncerineEaten",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancerine_eaten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/procedures/AncerineEatenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dolorine",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dolorine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/DolorineItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/dolorine.json"
+        ]
+      }
+    },
+    {
+      "name": "DolorinePowderEaten",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dolorine_powder_eaten",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/procedures/DolorinePowderEatenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DolorineFlowerAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dolorine_flower_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/procedures/DolorineFlowerAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DolorineFlower",
+      "type": "plant",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dolorine_flower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/block/DolorineFlowerBlock.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/dolorine_flower.json",
+          "src/main/resources/assets/dieselpunkmod/blockstates/dolorine_flower.json",
+          "src/main/resources/assets/dieselpunkmod/models/block/dolorine_flower.json",
+          "src/main/java/net/mcreator/dieselpunkmod/world/features/plants/DolorineFlowerFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "BoleniymIngot",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boleniym_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/models/item/boleniym_ingot.json",
+          "src/main/java/net/mcreator/dieselpunkmod/item/BoleniymIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BoleniymOre",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boleniym_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/blockstates/boleniym_ore.json",
+          "src/main/java/net/mcreator/dieselpunkmod/world/features/ores/BoleniymOreFeature.java",
+          "src/main/resources/assets/dieselpunkmod/models/block/boleniym_ore.json",
+          "src/main/java/net/mcreator/dieselpunkmod/block/BoleniymOreBlock.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/boleniym_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "BoleniymBlock",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boleniym_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/models/item/boleniym_block.json",
+          "src/main/java/net/mcreator/dieselpunkmod/block/BoleniymBlockBlock.java",
+          "src/main/resources/assets/dieselpunkmod/blockstates/boleniym_block.json",
+          "src/main/resources/assets/dieselpunkmod/models/block/boleniym_block.json"
+        ]
+      }
+    },
+    {
+      "name": "BoleniymOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boleniym_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/boleniym_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BoleniymBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boleniym_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/boleniym_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BoleniymOreSmelting",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boleniym_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/boleniym_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "BoleniumRawOre",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bolenium_raw_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/BoleniumRawOreItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/bolenium_raw_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "BroniumIngot",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/models/item/bronium_ingot.json",
+          "src/main/java/net/mcreator/dieselpunkmod/item/BroniumIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BroniumRawOre",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronium_raw_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/BroniumRawOreItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/bronium_raw_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "BroniumOre",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/blockstates/bronium_ore.json",
+          "src/main/java/net/mcreator/dieselpunkmod/block/BroniumOreBlock.java",
+          "src/main/java/net/mcreator/dieselpunkmod/world/features/ores/BroniumOreFeature.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/bronium_ore.json",
+          "src/main/resources/assets/dieselpunkmod/models/block/bronium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "BroniumBlock",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/blockstates/bronium_block.json",
+          "src/main/resources/assets/dieselpunkmod/models/item/bronium_block.json",
+          "src/main/java/net/mcreator/dieselpunkmod/block/BroniumBlockBlock.java",
+          "src/main/resources/assets/dieselpunkmod/models/block/bronium_block.json"
+        ]
+      }
+    },
+    {
+      "name": "BroniumBlockCraft",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronium_block_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/bronium_block_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "BroniumIngotCraft",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronium_ingot_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/bronium_ingot_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "BroniumOreSmelt",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronium_ore_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/bronium_ore_smelt.json"
+        ]
+      }
+    },
+    {
+      "name": "RacidiyIngot",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racidiy_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/RacidiyIngotItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/racidiy_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "RacidiyRawOre",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racidiy_raw_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/RacidiyRawOreItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/racidiy_raw_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RacidiyOre",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racidiy_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/models/item/racidiy_ore.json",
+          "src/main/resources/assets/dieselpunkmod/blockstates/racidiy_ore.json",
+          "src/main/java/net/mcreator/dieselpunkmod/block/RacidiyOreBlock.java",
+          "src/main/resources/assets/dieselpunkmod/models/block/racidiy_ore.json",
+          "src/main/java/net/mcreator/dieselpunkmod/world/features/ores/RacidiyOreFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "RacidiyBlock",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racidiy_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dieselpunkmod/models/block/racidiy_block.json",
+          "src/main/java/net/mcreator/dieselpunkmod/block/RacidiyBlockBlock.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/racidiy_block.json",
+          "src/main/resources/assets/dieselpunkmod/blockstates/racidiy_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RacidiyBlockCraft",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racidiy_block_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/racidiy_block_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "RacidiyIngotCraft",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racidiy_ingot_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/racidiy_ingot_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "RacidiyOreSmelt",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "racidiy_ore_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dieselpunkmod/recipes/racidiy_ore_smelt.json"
+        ]
+      }
+    },
+    {
+      "name": "CrudeOil",
+      "type": "fluid",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crude_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/item/CrudeOilItem.java",
+          "src/main/resources/assets/dieselpunkmod/models/item/crude_oil_bucket.json",
+          "src/main/java/net/mcreator/dieselpunkmod/fluid/CrudeOilFluid.java",
+          "src/main/java/net/mcreator/dieselpunkmod/block/CrudeOilBlock.java",
+          "src/main/resources/assets/dieselpunkmod/models/block/crude_oil.json",
+          "src/main/resources/assets/dieselpunkmod/blockstates/crude_oil.json"
+        ]
+      }
+    },
+    {
+      "name": "CrudeOilLake",
+      "type": "feature",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crude_oil_lake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/world/features/CrudeOilLakeFeature.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "ru_ru": {
+      "item.dieselpunkmod.ancerine_syringe": "Шприц Анцерина",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
+      "item.dieselpunkmod.emptysyringe": "Пустой шприц",
+      "subtitles.syringe": "Шприц использован",
+      "fluid.dieselpunkmod.crude_oil": "Crude Oil",
+      "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
+      "item.dieselpunkmod.crude_oil_bucket": "Crude Oil Bucket",
+      "block.dieselpunkmod.boleniym_ore": "Boleniym Ore",
+      "block.dieselpunkmod.racidiy_ore": "Fronium Ore",
+      "block.dieselpunkmod.racidiy_block": "Block of Fronium",
+      "block.dieselpunkmod.crude_oil": "Crude Oil",
+      "item.dieselpunkmod.racidiy_ingot": "Fronium Ingot",
+      "item.dieselpunkmod.ancerine": "Анцерин",
+      "subtitles.syringe_use": "Шприц использован",
+      "itemGroup.tabitems": "Palentesque часть 1",
+      "item.dieselpunkmod.dolorine": "Порошок Долорина",
+      "item.dieselpunkmod.boleniym_ingot": "Boleniym",
+      "item.dieselpunkmod.bronium_ingot": "Bolenium Ingot",
+      "item.dieselpunkmod.racidiy_raw_ore": "Raw Fronium",
+      "item.dieselpunkmod.bolenium_raw_ore": "Bolenium Ingot",
+      "block.dieselpunkmod.bronium_block": "Block of Boleniym",
+      "block.dieselpunkmod.bronium_ore": "Bolenium Ore",
+      "item.dieselpunkmod.bronium_raw_ore": "Raw Bolenium"
+    },
+    "en_us": {
+      "item.dieselpunkmod.ancerine_syringe": "Ancerine Syringe",
+      "block.dieselpunkmod.boleniym_block": "Block of Boleniym",
+      "item.dieselpunkmod.emptysyringe": "Empty syringe",
+      "subtitles.syringe": "syringe used",
+      "fluid.dieselpunkmod.crude_oil": "Crude Oil",
+      "block.dieselpunkmod.dolorine_flower": "Dolorine Flower",
+      "item.dieselpunkmod.crude_oil_bucket": "Crude Oil Bucket",
+      "block.dieselpunkmod.boleniym_ore": "Bolenium Ore",
+      "block.dieselpunkmod.racidiy_ore": "Racidium Ore",
+      "block.dieselpunkmod.racidiy_block": "Block of Racidium",
+      "block.dieselpunkmod.crude_oil": "Crude Oil",
+      "item.dieselpunkmod.racidiy_ingot": "Racidium Ingot",
+      "item.dieselpunkmod.ancerine": "Ancerine",
+      "subtitles.syringe_use": "Syringe use",
+      "itemGroup.tabitems": "Palentesque part 1",
+      "item.dieselpunkmod.dolorine": "Crude dolorine powder",
+      "item.dieselpunkmod.boleniym_ingot": "Bolenium Ingot",
+      "item.dieselpunkmod.bronium_ingot": "Fronium Ingot",
+      "item.dieselpunkmod.racidiy_raw_ore": "Raw Racidium",
+      "item.dieselpunkmod.bolenium_raw_ore": "Raw Bolenium",
+      "block.dieselpunkmod.bronium_block": "Block of Fronium",
+      "block.dieselpunkmod.bronium_ore": "Fronium Ore",
+      "item.dieselpunkmod.bronium_raw_ore": "Raw Fronium"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "dieselpunkmod",
+    "modName": "DieselpunkMod",
+    "version": "1.0.0",
+    "author": "user, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.dieselpunkmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

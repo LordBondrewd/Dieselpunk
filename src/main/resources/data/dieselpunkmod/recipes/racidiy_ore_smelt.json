@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "dieselpunkmod:racidiy_raw_ore"
+  },
+  "result": "dieselpunkmod:racidiy_ingot"
+}
