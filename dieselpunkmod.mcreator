@@ -512,6 +512,18 @@
           "src/main/java/net/mcreator/dieselpunkmod/world/features/CrudeOilLakeFeature.java"
         ]
       }
+    },
+    {
+      "name": "Huh",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "huh",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dieselpunkmod/Huh.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
